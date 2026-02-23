@@ -1,0 +1,8 @@
+name: Demonstration CI
+on: push
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "set up job"
+      - run : echo "Initialisation"
