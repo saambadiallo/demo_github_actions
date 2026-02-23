@@ -11,6 +11,7 @@ jobs:
         run : |
           echo "Initialisation"
           echo "Etape1: $etape1"
+          echo " var_Repos = ${{vars.ETAPE1}}"
       - name: etape 2 - Récupération du code
         run : |
           echo " Récupération du code"
