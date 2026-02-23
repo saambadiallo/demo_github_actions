@@ -5,4 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "set up job"
-      - run : echo "Initialisation"
+      - run : echo "etape 1 -Initialisation"
+      - run : echo "etape 2 - Récupération du code"
+      - run : echo "etape 3 - Build"
+      - run : echo "etape 4 - Tests"
+      - run : echo "etape 2 - Packaging"
+      - run : echo "etape 2 - Fin du pipeline"
+      - run : echo "complete job"
