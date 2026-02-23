@@ -7,6 +7,9 @@ jobs:
       etape1: "Le code vient d'etre poussé sur GitHub"
       etape2: "Le code vient d'etre recuperé"
     steps:
+      - name: etape 0 - Secret_Name
+        run :
+          echo " Mon sectret Name est ${{secrets.SECRET1}}"
       - name: etape 1 -Initialisation
         run : |
           echo "Initialisation"
