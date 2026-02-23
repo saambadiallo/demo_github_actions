@@ -1,0 +1,25 @@
+name: Demonstration CI
+on: push
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    env:
+      etape1: "Le code vient d'etre poussé sur GitHub"
+      etape2: "Le code vient d'etre recuperé"
+    steps:
+      - name: etape 1 -Initialisation
+        run : |
+          echo "Initialisation"
+          echo "Etape1: $etape1"
+      - name: etape 2 - Récupération du code
+        run : |
+          echo " Récupération du code"
+          echo "Etape2: $etape2"
+      - name: etape 3 - Build
+        run : echo "Build"
+      - name: etape 4 - Tests
+        run : echo "Tests"
+      - name: Etape 5 - Packaging
+        run : echo  "Packaging"
+      - name: etape 6 - Fin du pipeline
+        run : echo "Fin du pipeline"
